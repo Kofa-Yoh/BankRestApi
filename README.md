@@ -22,6 +22,15 @@
 ```
 git clone https://github.com/Kofa-Yoh/BankRestApi.git
 cd BankRestApi
+```
+```
+# Заменить в application.properties данные подключения к базе данных
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/kotkinaBankDb
+spring.datasource.username=postgres
+spring.datasource.password=admin
+```
+```
 mvn spring-boot:run
 ```
 Откройте `http://localhost:8081/swagger-ui/index.html`
