@@ -71,11 +71,11 @@ mvn spring-boot:run
 Клиенты
 ```
 # Получить данные текущего клиента
-/api/client [GET]
+[GET] /api/client
 
 # Получить данные клиентов, используя фильтры по фамилии/имени/отчеству/почте/телефону/дате рождения
-/api/client/filter [GET]
-{
+[GET] /api/client/filter?lastname=И&firstname=М&patronymic=В&birthdate=2000-05-22&email=ivanov@gmail.com&phone=+79996563963&page=0&size=3&sort=fio
+Params: {
   "lastname": "И",
   "firstname": "М",
   "patronymic": "В",
